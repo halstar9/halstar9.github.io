@@ -2,32 +2,35 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:  #1c2833;
-    color: #28331c;
+    background-color:  #1c2833; /* Dark blue-grey background */
+    color: #28331c; /* Earthy green text color */
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh
+	min-height: 100vh /* makes the page stretch to full height */
 }
 
+/* special styling for the splash screen */
 body.splash {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #1c2833;
+    background: #1c2833; /* same dark blue-grey as in body */
     color: white;
     text-align: center;
     font-family: Arial, sans-serif;
 }
 
+/* container for splash screen content */
 .splash-container {
-    background: #331c28;
+    background: #331c28; /* dark reddish brown background */
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 20px; 
 }
 
-nav ul {
-    list-style-type: none;
+/* styles for navigation tag */
+nav ul { 
+    list-style-type: none; /* removes bullet points */
     padding: 0;
 }
 
@@ -43,21 +46,22 @@ nav ul li a {
     border-radius: 5px;
 }
 
-
+/* Header stylings */
 header {
-    background: #331c28;
+    background: #331c28; /* dark reddish background */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+/* Main content section */
 section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background: white;
     border-radius: 10px;
-	flex: 1;
+    flex: 1; /* Fills available space vertically in flex layout */
 }
 
 h1, h2, h3 {
@@ -65,11 +69,13 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+/* list styling */
 ul {
     list-style-type: square;
     padding-left: 20px;
 }
 
+/* image styling */
 img {
     max-width: none;
     height: auto;
@@ -77,6 +83,7 @@ img {
     margin: 10px 0;
 }
 
+/* Spotify embed container */
 .spotify-container {
     text-align: center;
     margin-top: 20px;
@@ -89,6 +96,7 @@ img {
     border-radius: 12px;
 }
 
+/* footer styles */
 footer {
     text-align: center;
     padding: 10px;
@@ -100,6 +108,7 @@ footer {
 	width: 100%
 }
 
+/* link styles */
 a:link {
 	color: green;
 	background-color: transparent;
