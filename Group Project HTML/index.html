@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextUp</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>NextUp</h1>
+    </header>
+
+    <div class="page-container">
+        <nav class="sidebar sidebar-left">
+            <h2>Actions</h2>
+            <ul>
+                <li><button id="addTaskButton">Add Task</button></li>
+                <li><button id="deleteTaskButton">Delete Selected Task</button></li>
+                <li><button id="updateTaskButton">Update Selected Task</button></li>
+                <li>
+                    <input type="search" id="searchInput" placeholder="Search Tasks...">
+                    <button id="SearchButton">Search</button>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <h1>Your Tasks</h1>
+            <p>Task items will be displayed here...</p>
+        </main>
+
+        <nav class="sidebar sidebar-right">
+            <h2>Filters</h2>
+            <ul>
+                <li><button id="filterByDateButton">By Due Date</button></li>
+                <li><button id="filterByPriorityButton">By Priority</button></li>
+                <li><button id="filterByCategoryButton">By Category</button></li>
+            </ul>
+            <div class="filter-options">
+                </div>
+        </nav>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - The A-Team Coders</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
