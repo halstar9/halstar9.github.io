@@ -16,7 +16,10 @@
         <nav class="sidebar sidebar-left">
             <h2>Actions</h2>
             <ul>
-                <li><button id="addTaskButton">Add Task</button></li>
+                <li>
+                <button id="addTaskButton">Add Task</button>
+                <input type="text" id="taskTextBox" style="display: none;" placeholder="Task to add...">
+                </li>
                 <li><button id="deleteTaskButton">Delete Selected Task</button></li>
                 <li><button id="updateTaskButton">Update Selected Task</button></li>
                 <li>
@@ -28,6 +31,9 @@
 
         <main class="main-content">
             <h1>Your Tasks</h1>
+            <ul id="taskList">
+
+            </ul>
             <p>Task items will be displayed here...</p>
         </main>
 

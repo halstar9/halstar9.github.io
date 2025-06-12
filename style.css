@@ -17,6 +17,12 @@ body {
     min-height: 100vh;
 }
 
+.selected {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
 .sidebar {
     width: 220px;
     padding: 20px;
