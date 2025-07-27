@@ -18,8 +18,19 @@
             <ul>
                 <li>
                 <button id="addTaskButton">Add Task</button>
-                <input type="text" id="taskTextBox" style="display: none;" placeholder="Task to add...">
-                </li>
+                <div id="addTaskFormFields" style="display: none";>
+                    <input type="text" id="taskTextBox" placeholder="Task Description...">
+                    <input type="date" id="taskDueDate">
+                    <select id="taskPriority">
+                        <option value="">Select Priority</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <input type="text" id="taskCategory" placeholder="Category (e.g., Work, Personal)">
+                    <button id="confirmAddTaskButton">Confirm Add</button>
+                    <button id="cancelAddTaskButton">Cancel</button> 
+                </div>
                 <li><button id="deleteTaskButton">Delete Selected Task</button></li>
                 <li><button id="updateTaskButton">Update Selected Task</button></li>
                 <li>
@@ -53,6 +64,8 @@
         <p>&copy; 2025 - The A-Team Coders</p>
     </footer>
 
-    <script src="script.js"></script> 
+    <script src="constants.js"></script> 
+    <script src="functions.js"></script>
+    <script src="events.js"></script>
 </body>
 </html>
