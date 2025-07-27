@@ -1,0 +1,57 @@
+/* Buttons and Inputs in Sidebars */
+.sidebar button,
+.sidebar input[type="text"],
+.sidebar input[type="date"],
+.sidebar input[type="search"],
+.sidebar select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(176, 224, 230, 0.4);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: aliceblue;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: left;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar select option {
+    background-color: #1a1a4a;
+    color: aliceblue;
+    padding: 8px 15px;
+}
+
+
+.sidebar button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #b0e0e6;
+    box-shadow: 0 0 8px rgba(176, 224, 230, 0.3);
+}
+
+/* Styles for input fields when they are focused */
+.sidebar input:focus,
+.sidebar select:focus,
+.sidebar button:focus {
+    outline: none;
+    border-color: #87ceeb;
+    box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.5);
+}
+
+/* Placeholder text color for inputs */
+.sidebar input::placeholder {
+    color: rgba(176, 224, 230, 0.7);
+}
+
+/* Clear filter buttons */
+.clear-filter-button {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    border-color: rgba(255, 0, 0, 0.5) !important;
+    color: aliceblue !important;
+}
+
+.clear-filter-button:hover {
+    background-color: rgba(255, 0, 0, 0.4) !important;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5) !important;
+}

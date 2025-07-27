@@ -1,0 +1,19 @@
+/* Filter Options Area */
+.filter-options {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    font-size: 0.9em;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter-options label {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #e0f2f7;
+}

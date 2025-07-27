@@ -97,6 +97,13 @@ header h1 {
     transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.sidebar select option {
+    background-color: #1a1a4a;
+    color: aliceblue;
+    padding: 8px 15px;
+}
+
+
 .sidebar button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-color: #b0e0e6;
@@ -117,7 +124,7 @@ header h1 {
     color: rgba(176, 224, 230, 0.7);
 }
 
-/* Specific sidebar ordering (already in your code) */
+/* Specific sidebar ordering*/
 .sidebar-left {
     order: -1;
 }

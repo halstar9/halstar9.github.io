@@ -1,0 +1,97 @@
+/* Main Page Container (Flex for sidebars and content) */
+.page-container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #e0f2f7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar Styling (Common to both left and right) */
+.sidebar {
+    width: 250px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #b0e0e6;
+    border-bottom: 1px solid rgba(176, 224, 230, 0.3);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px;
+}
+
+/* Specific sidebar ordering*/
+.sidebar-left {
+    order: -1;
+}
+
+.sidebar-right {
+    order: 1;
+}
+
+/* Main Content Area */
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    min-height: calc(100vh - 40px - 70px);
+}
+
+.main-content h1 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #e0f2f7;
+    border-bottom: 1px solid rgba(176, 224, 230, 0.3);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+}

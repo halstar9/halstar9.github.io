@@ -1,0 +1,103 @@
+/* Task List Styling */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#taskList li {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(176, 224, 230, 0.1);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#taskList li:hover:not(.selected) {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(176, 224, 230, 0.4);
+}
+
+/* Styling for selected task */
+.selected {
+    background-color: rgba(0, 123, 255, 0.6) !important;
+    border-color: #007bff !important;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    transform: scale(1.01);
+}
+
+/* Task Checkbox */
+#taskList li .task-checkbox {
+    margin-right: 15px;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(176, 224, 230, 0.6);
+    cursor: pointer;
+    /* Custom checkbox styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#taskList li .task-checkbox:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+    box-shadow: inset 0 0 0 3px aliceblue;
+}
+
+/* Task Text (the description) */
+#taskList li .task-text {
+    flex-grow: 1;
+    font-size: 1.1em;
+    font-weight: bold;
+    word-break: break-word;
+    margin-right: 15px;
+}
+
+/* Completed Task Styling (Applies to the text span within .completed li) */
+.completed .task-text {
+    text-decoration: line-through;
+    color: #a9b9c9;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+/* Task Details (Due Date, Priority, Category) */
+.task-details {
+    font-size: 0.88em;
+    color: #c0d9e3;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.task-due-date,
+.task-priority,
+.task-category {
+    background-color: rgba(176, 224, 230, 0.1);
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    border: 1px solid rgba(176, 224, 230, 0.2);
+}
+
+/* Placeholder for no tasks */
+main p {
+    text-align: center;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+}
